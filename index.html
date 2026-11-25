@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Jaweria Sohail LinkedIn Profile &amp; Demo Guide — step-by-step checklist and tips to maximise your LinkedIn presence." />
+  <meta property="og:title" content="Jaweria Sohail — LinkedIn Profile &amp; Demo Guide" />
+  <meta property="og:description" content="Interactive checklist &amp; demo sharing guide for Jaweria Sohail, Web Developer skilled in HTML, CSS, JavaScript and Python." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0d0f1a" />
+  <!-- Inline SVG favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0f1a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='20' font-family='system-ui' fill='%2360a5fa'%3EJ%3C/text%3E%3C/svg%3E" />
+  <title>Jaweria Sohail — LinkedIn Profile &amp; Demo Guide</title>
+
+  <style>
+    /* =====================================================
+       RESET & CUSTOM PROPERTIES
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --clr-bg:        #0d0f1a;
+      --clr-surface:   #131627;
+      --clr-glass:     rgba(255,255,255,0.045);
+      --clr-border:    rgba(96,165,250,0.18);
+      --clr-blue:      #60a5fa;
+      --clr-blue-dim:  #3b82f6;
+      --clr-purple:    #a78bfa;
+      --clr-purple-dim:#7c3aed;
+      --clr-metal:     #94a3b8;
+      --clr-text:      #e2e8f0;
+      --clr-muted:     #94a3b8;
+      --clr-success:   #34d399;
+      --clr-danger:    #f87171;
+      --radius:        14px;
+      --radius-sm:     8px;
+      --nav-h-mobile:  60px;
+      --safe-b:        env(safe-area-inset-bottom, 0px);
+      --safe-t:        env(safe-area-inset-top, 0px);
+      --safe-l:        env(safe-area-inset-left, 0px);
+      --safe-r:        env(safe-area-inset-right, 0px);
+      --transition:    0.25s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--clr-bg);
+      color: var(--clr-text);
+      min-height: 100dvh;
+      overflow-x: hidden;
+      padding-bottom: calc(var(--nav-h-mobile) + var(--safe-b) + 8px);
+    }
+
+    @media (min-width: 768px) {
+      body { padding-bottom: 0; padding-top: 0; }
+    }
+
+    /* =====================================================
+       FOCUS VISIBLE — keyboard accessibility
+    ===================================================== */
+    :focus-visible {
+      outline: 2px solid var(--clr-blue);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* =====================================================
+       TYPOGRAPHY HELPERS
+    ===================================================== */
+    h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+    h1 { font-size: clamp(1.4rem, 5vw, 2.2rem); }
+    h2 { font-size: clamp(1.1rem, 3.5vw, 1.6rem); }
+    h3 { font-size: clamp(0.95rem, 2.5vw, 1.15rem); }
+    p  { line-height: 1.6; }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--clr-blue), var(--clr-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* =====================================================
+       LAYOUT
+    ===================================================== */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    section { padding: 36px 0; }
+
+    /* =====================================================
+       GLASS CARD
+    ===================================================== */
+    .card {
+      background: var(--clr-glass);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 20px 18px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(135deg,
+        rgba(96,165,250,0.04) 0%,
+        rgba(167,139,250,0.03) 100%);
+      pointer-events: none;
+    }
+
+    /* =====================================================
+       TOP DESKTOP NAV
+    ===================================================== */
+    #top-nav {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13,15,26,0.92);
+      border-bottom: 1px solid var(--clr-border);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    #top-nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    #top-nav .brand {
+      font-size: 0.95rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--clr-blue), var(--clr-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    #top-nav nav { display: flex; gap: 4px; }
+    #top-nav nav a {
+      color: var(--clr-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: color var(--transition), background var(--transition);
+    }
+    #top-nav nav a:hover,
+    #top-nav nav a.active {
+      color: var(--clr-text);
+      background: rgba(96,165,250,0.12);
+    }
+    #top-nav .share-btn-top {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    @media (min-width: 768px) {
+      #top-nav { display: block; }
+    }
+
+    /* =====================================================
+       BOTTOM MOBILE NAV
+    ===================================================== */
+    #bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(13,15,26,0.96);
+      border-top: 1px solid var(--clr-border);
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      height: calc(var(--nav-h-mobile) + var(--safe-b));
+      padding-bottom: var(--safe-b);
+      padding-left: var(--safe-l);
+      padding-right: var(--safe-r);
+    }
+    #bottom-nav a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      color: var(--clr-muted);
+      text-decoration: none;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      min-height: 44px;
+      transition: color var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+    #bottom-nav a:active { color: var(--clr-blue); }
+    #bottom-nav a.active { color: var(--clr-blue); }
+    #bottom-nav a svg { flex-shrink: 0; }
+
+    @media (min-width: 768px) {
+      #bottom-nav { display: none; }
+    }
+
+    /* =====================================================
+       HERO / HEADER
+    ===================================================== */
+    #hero {
+      padding: calc(28px + var(--safe-t)) 0 28px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(96,165,250,0.15), rgba(167,139,250,0.15));
+      border: 1px solid rgba(96,165,250,0.3);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.75rem;
+      color: var(--clr-blue);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .hero-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--clr-blue-dim), var(--clr-purple-dim));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 auto 16px;
+      border: 2px solid var(--clr-border);
+    }
+    .hero-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 14px;
+    }
+    .skill-tag {
+      background: rgba(96,165,250,0.1);
+      border: 1px solid rgba(96,165,250,0.25);
+      color: var(--clr-blue);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .hero-prepared {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: var(--clr-muted);
+    }
+
+    /* =====================================================
+       SECTION HEADINGS
+    ===================================================== */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .section-label .icon-wrap {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(96,165,250,0.2), rgba(167,139,250,0.15));
+      border: 1px solid rgba(96,165,250,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-desc { color: var(--clr-muted); font-size: 0.875rem; margin-top: 4px; }
+
+    /* =====================================================
+       PROGRESS BAR
+    ===================================================== */
+    .progress-wrap {
+      background: rgba(255,255,255,0.07);
+      border-radius: 100px;
+      height: 8px;
+      overflow: hidden;
+      margin: 16px 0 10px;
+    }
+    .progress-bar {
+      height: 100%;
+      border-radius: 100px;
+      background: linear-gradient(90deg, var(--clr-blue-dim), var(--clr-purple));
+      transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+      width: 0%;
+    }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--clr-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* =====================================================
+       CHECKLIST CARDS
+    ===================================================== */
+    .checklist-grid {
+      display: grid;
+      gap: 14px;
+    }
+    @media (min-width: 640px) {
+      .checklist-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .check-card {
+      background: var(--clr-glass);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      transition: border-color var(--transition), background var(--transition), opacity var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .check-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(135deg, rgba(96,165,250,0.03) 0%, rgba(167,139,250,0.02) 100%);
+      pointer-events: none;
+    }
+    .check-card.done {
+      border-color: rgba(52,211,153,0.35);
+      background: rgba(52,211,153,0.04);
+    }
+    .check-card.done .ba-before { opacity: 0.5; text-decoration: line-through; }
+
+    /* Checkbox custom look */
+    .check-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .check-label input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .check-box {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      border-radius: 6px;
+      border: 2px solid var(--clr-border);
+      background: rgba(255,255,255,0.04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color var(--transition), background var(--transition);
+      margin-top: 1px;
+    }
+    input[type="checkbox"]:checked + .check-label .check-box,
+    .check-card.done .check-box {
+      background: linear-gradient(135deg, var(--clr-blue-dim), var(--clr-purple-dim));
+      border-color: transparent;
+    }
+    .check-box svg { opacity: 0; transition: opacity 0.2s; }
+    input[type="checkbox"]:checked + .check-label .check-box svg,
+    .check-card.done .check-box svg { opacity: 1; }
+
+    .check-label:active .check-box {
+      transform: scale(0.9);
+    }
+
+    .check-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--clr-text);
+      margin-bottom: 8px;
+    }
+    .ba-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .ba-col {
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      font-size: 0.75rem;
+    }
+    .ba-before {
+      background: rgba(248,113,113,0.08);
+      border: 1px solid rgba(248,113,113,0.2);
+      color: #fca5a5;
+      transition: opacity var(--transition);
+    }
+    .ba-after {
+      background: rgba(52,211,153,0.07);
+      border: 1px solid rgba(52,211,153,0.2);
+      color: #6ee7b7;
+    }
+    .ba-tag {
+      display: block;
+      font-weight: 700;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 3px;
+      opacity: 0.8;
+    }
+    .ba-before .ba-tag { color: var(--clr-danger); }
+    .ba-after  .ba-tag { color: var(--clr-success); }
+
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      padding: 7px 13px;
+      border-radius: 20px;
+      border: 1px solid rgba(96,165,250,0.3);
+      background: rgba(96,165,250,0.08);
+      color: var(--clr-blue);
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 44px;
+      transition: background var(--transition), transform var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .copy-btn:active { transform: scale(0.95); background: rgba(96,165,250,0.18); }
+
+    /* =====================================================
+       RESET + BADGE
+    ===================================================== */
+    .checklist-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .reset-btn {
+      padding: 9px 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(248,113,113,0.3);
+      background: rgba(248,113,113,0.07);
+      color: var(--clr-danger);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 44px;
+      transition: background var(--transition), transform var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .reset-btn:active { transform: scale(0.95); background: rgba(248,113,113,0.15); }
+
+    .profile-ready-badge {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(52,211,153,0.15), rgba(96,165,250,0.1));
+      border: 1px solid rgba(52,211,153,0.4);
+      border-radius: 20px;
+      padding: 7px 16px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--clr-success);
+      animation: badgePop 0.4s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    .profile-ready-badge.visible { display: flex; }
+
+    @keyframes badgePop {
+      from { opacity: 0; transform: scale(0.7); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    .confetti-wrap {
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      overflow: hidden;
+    }
+    .confetti-piece {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      top: -20px;
+      animation: confettiFall var(--dur) var(--delay) ease-in forwards;
+    }
+    @keyframes confettiFall {
+      0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+    }
+
+    /* =====================================================
+       CUSTOM CONFIRM DIALOG
+    ===================================================== */
+    .dialog-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      background: rgba(0,0,0,0.65);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .dialog-overlay.open { display: flex; }
+    .dialog-box {
+      background: #1a1d2e;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+      max-width: 340px;
+      width: 100%;
+      animation: dialogIn 0.25s cubic-bezier(0.34,1.4,0.64,1) forwards;
+    }
+    @keyframes dialogIn {
+      from { opacity: 0; transform: scale(0.85) translateY(20px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .dialog-box h3 { font-size: 1rem; margin-bottom: 10px; }
+    .dialog-box p { font-size: 0.875rem; color: var(--clr-muted); line-height: 1.5; }
+    .dialog-actions { display: flex; gap: 10px; margin-top: 18px; }
+    .dialog-actions button {
+      flex: 1;
+      padding: 10px;
+      border-radius: var(--radius-sm);
+      border: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 44px;
+      transition: opacity var(--transition), transform var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .dialog-actions button:active { transform: scale(0.96); }
+    .dialog-cancel  { background: rgba(255,255,255,0.08); color: var(--clr-text); }
+    .dialog-confirm { background: linear-gradient(135deg, #ef4444, #dc2626); color: #fff; }
+
+    /* =====================================================
+       SECTION 2 — DEMO SHARING
+    ===================================================== */
+    #demos .info-grid {
+      display: grid;
+      gap: 12px;
+    }
+    @media (min-width: 640px) {
+      #demos .info-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .info-card {
+      background: var(--clr-glass);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: border-color var(--transition);
+    }
+    .info-card:active { border-color: var(--clr-blue); }
+    .info-icon {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(96,165,250,0.18), rgba(167,139,250,0.12));
+      border: 1px solid rgba(96,165,250,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .info-card-text h4 { font-size: 0.875rem; margin-bottom: 4px; }
+    .info-card-text p  { font-size: 0.775rem; color: var(--clr-muted); }
+
+    /* Caption Templates */
+    .template-cards { display: grid; gap: 12px; margin-top: 20px; }
+    .template-card {
+      background: rgba(167,139,250,0.05);
+      border: 1px solid rgba(167,139,250,0.2);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .template-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--clr-purple);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .template-text {
+      font-size: 0.82rem;
+      color: var(--clr-text);
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+    .template-text em {
+      background: rgba(167,139,250,0.2);
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-style: normal;
+      color: var(--clr-purple);
+    }
+
+    /* Hashtag block */
+    .hashtag-block {
+      background: rgba(96,165,250,0.05);
+      border: 1px solid rgba(96,165,250,0.2);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      margin-top: 20px;
+    }
+    .hashtag-text {
+      font-size: 0.8rem;
+      color: var(--clr-blue);
+      line-height: 1.8;
+      word-break: break-word;
+    }
+
+    /* =====================================================
+       POSTING PLANNER
+    ===================================================== */
+    #planner { scroll-margin-top: 70px; }
+    .planner-grid { display: grid; gap: 10px; }
+    @media (min-width: 480px) {
+      .planner-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .planner-day {
+      background: var(--clr-glass);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: center;
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .planner-day.done {
+      border-color: rgba(52,211,153,0.35);
+      background: rgba(52,211,153,0.04);
+    }
+    .planner-check-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .planner-check-label input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .planner-day-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--clr-text);
+    }
+    .planner-day-hint {
+      font-size: 0.72rem;
+      color: var(--clr-muted);
+      margin-top: 2px;
+    }
+    .planner-tick {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--clr-border);
+      background: rgba(255,255,255,0.03);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color var(--transition), background var(--transition);
+    }
+    input[type="checkbox"]:checked + .planner-check-label .planner-tick {
+      background: linear-gradient(135deg, var(--clr-success), #059669);
+      border-color: transparent;
+    }
+    .planner-tick svg { opacity: 0; transition: opacity 0.2s; }
+    input[type="checkbox"]:checked + .planner-check-label .planner-tick svg { opacity: 1; }
+
+    /* =====================================================
+       FAQ ACCORDION
+    ===================================================== */
+    #faq { scroll-margin-top: 70px; }
+    .faq-list { display: grid; gap: 10px; }
+    details.faq-item {
+      background: var(--clr-glass);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color var(--transition);
+    }
+    details.faq-item[open] { border-color: rgba(96,165,250,0.35); }
+    details.faq-item summary {
+      padding: 14px 16px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after {
+      content: "+";
+      font-size: 1.2rem;
+      color: var(--clr-blue);
+      flex-shrink: 0;
+      transition: transform var(--transition);
+    }
+    details.faq-item[open] summary::after { transform: rotate(45deg); }
+    details.faq-item .faq-body {
+      padding: 0 16px 14px;
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+      line-height: 1.65;
+    }
+    details.faq-item .faq-body p + p { margin-top: 8px; }
+
+    /* =====================================================
+       SHARE / GLOBAL BUTTON
+    ===================================================== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 11px 22px;
+      border-radius: 24px;
+      border: none;
+      background: linear-gradient(135deg, var(--clr-blue-dim), var(--clr-purple-dim));
+      color: #fff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      cursor: pointer;
+      min-height: 44px;
+      transition: opacity var(--transition), transform var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-primary:active { opacity: 0.85; transform: scale(0.96); }
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+    #toast {
+      position: fixed;
+      bottom: calc(var(--nav-h-mobile) + var(--safe-b) + 14px);
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #1e2235;
+      border: 1px solid var(--clr-border);
+      border-radius: 24px;
+      padding: 10px 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--clr-text);
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s, transform 0.25s;
+      z-index: 400;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    @media (min-width: 768px) {
+      #toast { bottom: 24px; }
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      border-top: 1px solid var(--clr-border);
+      font-size: 0.8rem;
+      color: var(--clr-muted);
+    }
+    footer strong { color: var(--clr-blue); }
+    .footer-heart { color: #f43f5e; }
+
+    /* =====================================================
+       SECTION SCROLL MARGIN
+    ===================================================== */
+    #checklist, #demos { scroll-margin-top: 70px; }
+
+    /* =====================================================
+       REDUCED MOTION
+    ===================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* =====================================================
+       DIVIDER
+    ===================================================== */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--clr-border);
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================================================
+       ARIA LIVE for toast announcements
+  =================================================== -->
+  <div aria-live="polite" aria-atomic="true" id="a11y-announce" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;"></div>
+
+  <!-- ===================================================
+       TOAST
+  =================================================== -->
+  <div id="toast" role="status"></div>
+
+  <!-- ===================================================
+       CONFETTI CONTAINER
+  =================================================== -->
+  <div class="confetti-wrap" id="confetti" aria-hidden="true"></div>
+
+  <!-- ===================================================
+       CUSTOM CONFIRM DIALOG
+  =================================================== -->
+  <div class="dialog-overlay" id="resetDialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+    <div class="dialog-box">
+      <h3 id="dialogTitle">Reset Checklist?</h3>
+      <p>This will clear all your saved progress and start fresh. This action cannot be undone.</p>
+      <div class="dialog-actions">
+        <button class="dialog-cancel"  id="dialogCancel">Keep Progress</button>
+        <button class="dialog-confirm" id="dialogConfirm">Yes, Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       TOP NAV (desktop)
+  =================================================== -->
+  <div id="top-nav" role="banner">
+    <div class="container">
+      <span class="brand">Jaweria Sohail — LinkedIn Guide</span>
+      <nav aria-label="Page sections">
+        <a href="#checklist">Checklist</a>
+        <a href="#demos">Demos</a>
+        <a href="#planner">Planner</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="share-btn-top">
+        <button class="btn-primary" id="shareBtn" aria-label="Share this page">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MAIN CONTENT
+  =================================================== -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero-badge">LinkedIn Profile Guide</div>
+        <div class="hero-avatar" aria-hidden="true">JS</div>
+        <h1 id="heroTitle" class="gradient-text">Jaweria Sohail</h1>
+        <p style="color:var(--clr-muted);font-size:0.9rem;margin-top:6px;">Web Developer</p>
+        <div class="hero-skills" role="list" aria-label="Skills">
+          <span class="skill-tag" role="listitem">HTML</span>
+          <span class="skill-tag" role="listitem">CSS</span>
+          <span class="skill-tag" role="listitem">JavaScript</span>
+          <span class="skill-tag" role="listitem">Python</span>
+        </div>
+        <p class="hero-prepared">Prepared by <strong style="color:var(--clr-purple);">MR. DIGITAL X</strong></p>
+        <div style="margin-top:16px;">
+          <button class="btn-primary" id="shareBtn2" aria-label="Share this guide">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            Share This Guide
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================================================
+         SECTION 1: PROFILE CHECKLIST
+    =================================================== -->
+    <section id="checklist" aria-labelledby="checklistTitle">
+      <div class="container">
+        <div class="section-label">
+          <div class="icon-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div>
+            <h2 id="checklistTitle">Before &amp; After Profile Fixes</h2>
+            <p class="section-desc">Tick each fix as you complete it — progress saves automatically.</p>
+          </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-wrap" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="6" id="progressBar" aria-label="Checklist progress">
+          <div class="progress-bar" id="progressFill"></div>
+        </div>
+        <div class="progress-label">
+          <span id="progressText">0 of 6 completed</span>
+          <span id="progressPct">0%</span>
+        </div>
+
+        <!-- Cards -->
+        <div class="checklist-grid" style="margin-top:18px;" id="checklistCards">
+
+          <!-- CARD 1 -->
+          <div class="check-card" id="card-1" data-id="1">
+            <input type="checkbox" id="chk1" aria-describedby="chk1-desc" />
+            <label class="check-label" for="chk1">
+              <span class="check-box" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>
+                <span class="check-title">Update LinkedIn Headline</span>
+              </span>
+            </label>
+            <div id="chk1-desc">
+              <div class="ba-row">
+                <div class="ba-col ba-before">
+                  <span class="ba-tag">Before</span>
+                  Generic title or empty headline with no keywords.
+                </div>
+                <div class="ba-col ba-after">
+                  <span class="ba-tag">After</span>
+                  Keyword-rich headline targeting recruiters and founders.
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="Web Developer | Building Modern &amp; Responsive Websites with HTML, CSS, JavaScript &amp; Python" aria-label="Copy optimised headline">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy Headline
+              </button>
+              <p style="font-size:0.72rem;color:var(--clr-muted);margin-top:7px;line-height:1.5;">
+                "Web Developer | Building Modern &amp; Responsive Websites with HTML, CSS, JavaScript &amp; Python"
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="check-card" id="card-2" data-id="2">
+            <input type="checkbox" id="chk2" aria-describedby="chk2-desc" />
+            <label class="check-label" for="chk2">
+              <span class="check-box" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>
+                <span class="check-title">Remove Phone from Cover Banner</span>
+              </span>
+            </label>
+            <div id="chk2-desc">
+              <div class="ba-row">
+                <div class="ba-col ba-before">
+                  <span class="ba-tag">Before</span>
+                  Personal phone number displayed publicly on the cover image.
+                </div>
+                <div class="ba-col ba-after">
+                  <span class="ba-tag">After</span>
+                  Contact details safely inside Contact Info only — no public exposure.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="check-card" id="card-3" data-id="3">
+            <input type="checkbox" id="chk3" aria-describedby="chk3-desc" />
+            <label class="check-label" for="chk3">
+              <span class="check-box" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>
+                <span class="check-title">Clean Custom LinkedIn URL</span>
+              </span>
+            </label>
+            <div id="chk3-desc">
+              <div class="ba-row">
+                <div class="ba-col ba-before">
+                  <span class="ba-tag">Before</span>
+                  linkedin.com/in/jaweria-sohail-<em style="background:rgba(248,113,113,0.15);border-radius:3px;padding:0 3px;font-style:normal;">39b8c</em> — messy auto-generated suffix.
+                </div>
+                <div class="ba-col ba-after">
+                  <span class="ba-tag">After</span>
+                  linkedin.com/in/jaweria-sohail — clean, professional, easy to share.
+                </div>
+              </div>
+              <p style="font-size:0.72rem;color:var(--clr-muted);margin-top:8px;">Go to Edit public profile &amp; URL → Edit your custom URL → remove the random numbers.</p>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="check-card" id="card-4" data-id="4">
+            <input type="checkbox" id="chk4" aria-describedby="chk4-desc" />
+            <label class="check-label" for="chk4">
+              <span class="check-box" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>
+                <span class="check-title">Enable "Providing Services"</span>
+              </span>
+            </label>
+            <div id="chk4-desc">
+              <div class="ba-row">
+                <div class="ba-col ba-before">
+                  <span class="ba-tag">Before</span>
+                  Only "Open to Work" showing — missing freelance/service visibility.
+                </div>
+                <div class="ba-col ba-after">
+                  <span class="ba-tag">After</span>
+                  Both "Open to Work" + "Providing Services" active — 2× discovery.
+                </div>
+              </div>
+              <p style="font-size:0.72rem;color:var(--clr-muted);margin-top:8px;">Profile → Open to → Providing services → select Web Development and related services.</p>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div class="check-card" id="card-5" data-id="5">
+            <input type="checkbox" id="chk5" aria-describedby="chk5-desc" />
+            <label class="check-label" for="chk5">
+              <span class="check-box" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>
+                <span class="check-title">Add a Featured Section</span>
+              </span>
+            </label>
+            <div id="chk5-desc">
+              <div class="ba-row">
+                <div class="ba-col ba-before">
+                  <span class="ba-tag">Before</span>
+                  No Featured section — your projects are invisible to profile visitors.
+                </div>
+                <div class="ba-col ba-after">
+                  <span class="ba-tag">After</span>
+                  Live demos, screenshots &amp; GitHub links pinned front-and-centre.
+                </div>
+              </div>
+              <p style="font-size:0.72rem;color:var(--clr-muted);margin-top:8px;">Add Profile Section → Recommended → Featured → add links, media, posts and articles.</p>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div class="check-card" id="card-6" data-id="6">
+            <input type="checkbox" id="chk6" aria-describedby="chk6-desc" />
+            <label class="check-label" for="chk6">
+              <span class="check-box" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span>
+                <span class="check-title">Grow Your Network Daily</span>
+              </span>
+            </label>
+            <div id="chk6-desc">
+              <div class="ba-row">
+                <div class="ba-col ba-before">
+                  <span class="ba-tag">Before</span>
+                  Small, stagnant network — low reach and few opportunities.
+                </div>
+                <div class="ba-col ba-after">
+                  <span class="ba-tag">After</span>
+                  Active connections with recruiters, founders &amp; developers weekly.
+                </div>
+              </div>
+              <p style="font-size:0.72rem;color:var(--clr-muted);margin-top:8px;">Send 5–10 personalised connection requests daily to recruiters, startup founders and fellow developers.</p>
+            </div>
+          </div>
+
+        </div><!-- /checklist-grid -->
+
+        <!-- Actions row -->
+        <div class="checklist-actions">
+          <button class="reset-btn" id="resetBtn" aria-label="Reset all checklist progress">
+            ↺ Reset Checklist
+          </button>
+          <div class="profile-ready-badge" id="readyBadge" role="status" aria-live="polite" aria-label="Profile ready celebration">
+            🎉 Profile Ready!
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================================================
+         SECTION 2: DEMO SHARING
+    =================================================== -->
+    <section id="demos" aria-labelledby="demosTitle">
+      <div class="container">
+        <div class="section-label">
+          <div class="icon-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-purple)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <div>
+            <h2 id="demosTitle">How to Share Project Demos</h2>
+            <p class="section-desc">Build visibility and attract opportunities with consistent demo posts.</p>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">🎬</div>
+            <div class="info-card-text">
+              <h4>Record 20–40 Second Demos</h4>
+              <p>Short, focused screen recordings show recruiters exactly what you built without wasting their time.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">📱</div>
+            <div class="info-card-text">
+              <h4>Show Desktop &amp; Mobile Views</h4>
+              <p>Demonstrate responsiveness side-by-side — it proves professional-level attention to detail.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">🔗</div>
+            <div class="info-card-text">
+              <h4>Share Live Links &amp; GitHub</h4>
+              <p>Always attach the live URL and your GitHub repo so anyone can explore and verify your work.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon" aria-hidden="true">📅</div>
+            <div class="info-card-text">
+              <h4>Post 2–3 Times Per Week</h4>
+              <p>Consistency beats volume. Regular posts keep you visible in the LinkedIn algorithm and in recruiters' feeds.</p>
+            </div>
+          </div>
+          <div class="info-card" style="grid-column: 1/-1;">
+            <div class="info-icon" aria-hidden="true">✍️</div>
+            <div class="info-card-text">
+              <h4>Write Professional Captions</h4>
+              <p>Explain what the project does, which technologies you used, what problem it solves, and what you learned. End with a question or call to action to boost engagement.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caption Templates -->
+        <h3 style="margin-top:28px;margin-bottom:4px;">Caption Templates</h3>
+        <p style="font-size:0.8rem;color:var(--clr-muted);margin-bottom:0;">Copy and customise — replace <span style="background:rgba(167,139,250,0.2);border-radius:4px;padding:1px 5px;color:var(--clr-purple);font-size:0.75rem;">[placeholders]</span> with your details.</p>
+
+        <div class="template-cards">
+
+          <div class="template-card">
+            <div class="template-label">Template 1 — Project Launch</div>
+            <p class="template-text">🚀 Just launched <em>[Project Name]</em>!
+
+Built with <em>[Tech Stack]</em>, this project solves <em>[problem it addresses]</em>.
+
+✅ Fully responsive
+✅ Clean, semantic code
+✅ <em>[Standout feature]</em>
+
+🔗 Live: <em>[Live Link]</em>
+💻 Code: <em>[GitHub Link]</em>
+
+What do you think? Drop your feedback below 👇
+
+<em>[Hashtags]</em></p>
+            <button class="copy-btn template-copy" data-copy="🚀 Just launched [Project Name]!
+
+Built with [Tech Stack], this project solves [problem it addresses].
+
+✅ Fully responsive
+✅ Clean, semantic code
+✅ [Standout feature]
+
+🔗 Live: [Live Link]
+💻 Code: [GitHub Link]
+
+What do you think? Drop your feedback below 👇
+
+[Hashtags]" aria-label="Copy template 1">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Template
+            </button>
+          </div>
+
+          <div class="template-card">
+            <div class="template-label">Template 2 — What I Learned</div>
+            <p class="template-text">📚 This week I built <em>[Project Name]</em> and learned more than I expected.
+
+The biggest challenge: <em>[challenge you faced]</em>.
+My solution: <em>[how you solved it]</em>.
+
+Tech used: <em>[Tech Stack]</em>
+
+This is why I love web development — every project teaches something new.
+
+🔗 Check it out: <em>[Live Link]</em>
+
+<em>[Hashtags]</em></p>
+            <button class="copy-btn template-copy" data-copy="📚 This week I built [Project Name] and learned more than I expected.
+
+The biggest challenge: [challenge you faced].
+My solution: [how you solved it].
+
+Tech used: [Tech Stack]
+
+This is why I love web development — every project teaches something new.
+
+🔗 Check it out: [Live Link]
+
+[Hashtags]" aria-label="Copy template 2">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Template
+            </button>
+          </div>
+
+          <div class="template-card">
+            <div class="template-label">Template 3 — Responsive Showcase</div>
+            <p class="template-text">📱💻 Mobile-first or desktop-first? For <em>[Project Name]</em> I went mobile-first.
+
+Here's how it looks across devices 👆
+
+Built with <em>[Tech Stack]</em>.
+Features: <em>[key features]</em>.
+
+Responsive design isn't optional anymore — it's the baseline.
+
+💻 Code: <em>[GitHub Link]</em>  |  🔗 Live: <em>[Live Link]</em>
+
+<em>[Hashtags]</em></p>
+            <button class="copy-btn template-copy" data-copy="📱💻 Mobile-first or desktop-first? For [Project Name] I went mobile-first.
+
+Here's how it looks across devices 👆
+
+Built with [Tech Stack].
+Features: [key features].
+
+Responsive design isn't optional anymore — it's the baseline.
+
+💻 Code: [GitHub Link]  |  🔗 Live: [Live Link]
+
+[Hashtags]" aria-label="Copy template 3">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy Template
+            </button>
+          </div>
+
+        </div><!-- /template-cards -->
+
+        <!-- Hashtags -->
+        <div class="hashtag-block">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:8px;">
+            <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--clr-blue);">Ready-to-use Hashtags</span>
+            <button class="copy-btn" id="copyHashtags" aria-label="Copy all hashtags" style="margin-top:0;padding:5px 12px;min-height:36px;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy All
+            </button>
+          </div>
+          <p class="hashtag-text" id="hashtagText">#WebDevelopment #HTML #CSS #JavaScript #Python #FrontEnd #ResponsiveDesign #WebDesign #Coding #Developer #Portfolio #OpenToWork #LinkedInTips #TechCareers #BuildInPublic #100DaysOfCode #GitHub #Programming #WebDev #JobSeekers</p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================================================
+         POSTING PLANNER
+    =================================================== -->
+    <section id="planner" aria-labelledby="plannerTitle">
+      <div class="container">
+        <div class="section-label">
+          <div class="icon-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-blue)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <h2 id="plannerTitle">Weekly Posting Planner</h2>
+            <p class="section-desc">Mon / Wed / Fri — your three posting days. Tick them off as you go.</p>
+          </div>
+        </div>
+
+        <div class="planner-grid">
+
+          <div class="planner-day" id="planner-mon">
+            <input type="checkbox" id="planMon" />
+            <label class="planner-check-label" for="planMon">
+              <div class="planner-tick" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="planner-day-name">Monday</span>
+              <span class="planner-day-hint">Project launch or new feature</span>
+            </label>
+          </div>
+
+          <div class="planner-day" id="planner-wed">
+            <input type="checkbox" id="planWed" />
+            <label class="planner-check-label" for="planWed">
+              <div class="planner-tick" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="planner-day-name">Wednesday</span>
+              <span class="planner-day-hint">What I learned this week</span>
+            </label>
+          </div>
+
+          <div class="planner-day" id="planner-fri">
+            <input type="checkbox" id="planFri" />
+            <label class="planner-check-label" for="planFri">
+              <div class="planner-tick" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="planner-day-name">Friday</span>
+              <span class="planner-day-hint">Responsive design showcase</span>
+            </label>
+          </div>
+
+        </div>
+
+        <p style="font-size:0.75rem;color:var(--clr-muted);margin-top:12px;text-align:center;">Planner ticks are saved and persist across page reloads.</p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===================================================
+         FAQ
+    =================================================== -->
+    <section id="faq" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-label">
+          <div class="icon-wrap" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--clr-purple)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h2 id="faqTitle">Frequently Asked Questions</h2>
+            <p class="section-desc">Quick answers to common profile and demo questions.</p>
+          </div>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>How long should my LinkedIn summary (About) section be?</summary>
+            <div class="faq-body">
+              <p>Aim for 3–5 short paragraphs, roughly 200–300 words. Open with a strong hook about who you are and what you build. Include your core skills (HTML, CSS, JavaScript, Python), a couple of project achievements, and a clear call to action — for example "Open to freelance projects and full-time opportunities."</p>
+              <p>LinkedIn only shows the first two lines before the "see more" click, so make those count.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What tools can I use to record screen demos?</summary>
+            <div class="faq-body">
+              <p>On Windows, the built-in Xbox Game Bar (Win + G) records any window for free. OBS Studio is free and more powerful. On Mac, QuickTime Player records screens natively. For mobile recordings, most Android and iOS versions have a built-in screen recorder in the notification shade or Control Centre.</p>
+              <p>Keep recordings to 20–40 seconds, narrate what you're doing or add captions, and export at 1080p if possible.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I host a live demo for free?</summary>
+            <div class="faq-body">
+              <p>GitHub Pages is the simplest option for static HTML/CSS/JS projects — push your repo, enable Pages in Settings, and you get a free URL in seconds. Netlify and Vercel both offer free tiers with automatic deployments from GitHub. For Python projects, Railway and Render have free starter plans.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Should I connect with people I don't know on LinkedIn?</summary>
+            <div class="faq-body">
+              <p>Yes — LinkedIn is a professional networking platform, not a personal social network. Sending a short personalised note with your connection request ("Hi [Name], I'm a web developer building projects in HTML/CSS/JS and Python. I'd love to connect with you.") dramatically increases acceptance rates and starts a real conversation.</p>
+              <p>Target recruiters at companies you admire, founders of startups in your area, and developers a few years ahead of you in their career.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How often should I update my profile?</summary>
+            <div class="faq-body">
+              <p>Add each new project to your Featured section as soon as it's live. Update your Experience or Projects sections every 1–2 months as your skills and work evolve. LinkedIn's algorithm surfaces active profiles, so even small updates (a new skill endorsement, a fresh post) help keep you visible.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  =================================================== -->
+  <footer>
+    <p>Prepared with <span class="footer-heart">❤️</span> by <strong>MR. DIGITAL X</strong></p>
+    <p style="margin-top:6px;">Built for <strong style="color:var(--clr-purple);">Jaweria Sohail</strong> · Web Developer</p>
+  </footer>
+
+  <!-- ===================================================
+       BOTTOM NAV (mobile)
+  =================================================== -->
+  <nav id="bottom-nav" aria-label="Page navigation">
+    <a href="#checklist" id="bnav-checklist">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      Checklist
+    </a>
+    <a href="#demos" id="bnav-demos">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+      Demos
+    </a>
+    <a href="#planner" id="bnav-planner">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Planner
+    </a>
+  </nav>
+
+  <!-- ===================================================
+       JAVASCRIPT
+  =================================================== -->
+  <script>
+    "use strict";
+
+    /* =====================================================
+       STORAGE HELPER — never crashes on file:// or private
+    ===================================================== */
+    const store = (() => {
+      let mem = {};
+      let available = false;
+      try {
+        const test = "__ls_test__";
+        localStorage.setItem(test, "1");
+        localStorage.removeItem(test);
+        available = true;
+      } catch (e) { /* private mode or file:// restrictions */ }
+
+      return {
+        get(key) {
+          try {
+            if (available) return localStorage.getItem(key);
+          } catch (e) {}
+          return mem[key] !== undefined ? mem[key] : null;
+        },
+        set(key, val) {
+          try {
+            if (available) localStorage.setItem(key, val);
+          } catch (e) {}
+          mem[key] = val;
+        },
+        remove(key) {
+          try {
+            if (available) localStorage.removeItem(key);
+          } catch (e) {}
+          delete mem[key];
+        }
+      };
+    })();
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+    const toastEl    = document.getElementById("toast");
+    const a11yAnn    = document.getElementById("a11y-announce");
+    let toastTimer   = null;
+
+    function showToast(msg) {
+      clearTimeout(toastTimer);
+      toastEl.textContent = msg;
+      toastEl.classList.add("show");
+      a11yAnn.textContent = msg;
+      toastTimer = setTimeout(() => {
+        toastEl.classList.remove("show");
+        a11yAnn.textContent = "";
+      }, 2400);
+    }
+
+    /* =====================================================
+       COPY UTILITY
+    ===================================================== */
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).then(() => showToast("Copied!")).catch(() => fallbackCopy(text));
+      }
+      fallbackCopy(text);
+    }
+    function fallbackCopy(text) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.cssText = "position:fixed;left:-9999px;top:-9999px;opacity:0;";
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try { document.execCommand("copy"); showToast("Copied!"); }
+      catch (e) { showToast("Could not copy — please copy manually."); }
+      document.body.removeChild(ta);
+    }
+
+    /* =====================================================
+       COPY BUTTONS (checklist cards + templates + hashtags)
+    ===================================================== */
+    document.querySelectorAll(".copy-btn[data-copy]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        // decode HTML entities from data-copy attribute
+        const temp = document.createElement("textarea");
+        temp.innerHTML = btn.dataset.copy;
+        copyText(temp.value);
+      });
+    });
+
+    document.getElementById("copyHashtags").addEventListener("click", () => {
+      copyText(document.getElementById("hashtagText").textContent.trim());
+    });
+
+    /* =====================================================
+       CHECKLIST STATE
+    ===================================================== */
+    const TOTAL      = 6;
+    const STORAGE_KEY = "js_checklist_v1";
+    const checkboxes = [];
+
+    for (let i = 1; i <= TOTAL; i++) {
+      checkboxes.push(document.getElementById("chk" + i));
+    }
+
+    function loadChecklist() {
+      try {
+        const saved = store.get(STORAGE_KEY);
+        if (saved) {
+          const state = JSON.parse(saved);
+          checkboxes.forEach((cb, idx) => {
+            cb.checked = !!state[idx + 1];
+            updateCardStyle(idx + 1, !!state[idx + 1]);
+          });
+        }
+      } catch (e) { /* corrupt data — start fresh */ }
+      updateProgress();
+    }
+
+    function saveChecklist() {
+      const state = {};
+      checkboxes.forEach((cb, idx) => { state[idx + 1] = cb.checked; });
+      try { store.set(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+    }
+
+    function updateCardStyle(id, done) {
+      const card = document.getElementById("card-" + id);
+      if (!card) return;
+      if (done) {
+        card.classList.add("done");
+      } else {
+        card.classList.remove("done");
+      }
+    }
+
+    function countDone() {
+      return checkboxes.filter(cb => cb.checked).length;
+    }
+
+    function updateProgress() {
+      const done   = countDone();
+      const pct    = Math.round((done / TOTAL) * 100);
+      const fill   = document.getElementById("progressFill");
+      const bar    = document.getElementById("progressBar");
+      const label  = document.getElementById("progressText");
+      const pctEl  = document.getElementById("progressPct");
+      const badge  = document.getElementById("readyBadge");
+
+      fill.style.width   = pct + "%";
+      bar.setAttribute("aria-valuenow", done);
+      label.textContent  = done + " of " + TOTAL + " completed";
+      pctEl.textContent  = pct + "%";
+
+      if (done === TOTAL) {
+        badge.classList.add("visible");
+        spawnConfetti();
+      } else {
+        badge.classList.remove("visible");
+      }
+    }
+
+    checkboxes.forEach((cb, idx) => {
+      cb.addEventListener("change", () => {
+        updateCardStyle(idx + 1, cb.checked);
+        updateProgress();
+        saveChecklist();
+      });
+    });
+
+    /* =====================================================
+       CONFETTI
+    ===================================================== */
+    function spawnConfetti() {
+      const container = document.getElementById("confetti");
+      // honour reduced motion
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      container.innerHTML = "";
+      const colours = ["#60a5fa","#a78bfa","#34d399","#f9a8d4","#fbbf24"];
+      for (let i = 0; i < 48; i++) {
+        const piece = document.createElement("div");
+        piece.className = "confetti-piece";
+        piece.style.left        = Math.random() * 100 + "vw";
+        piece.style.background  = colours[Math.floor(Math.random() * colours.length)];
+        piece.style.setProperty("--dur",   (1.2 + Math.random() * 1.2) + "s");
+        piece.style.setProperty("--delay", (Math.random() * 0.6) + "s");
+        container.appendChild(piece);
+      }
+      setTimeout(() => { container.innerHTML = ""; }, 3000);
+    }
+
+    /* =====================================================
+       RESET DIALOG
+    ===================================================== */
+    const dialog        = document.getElementById("resetDialog");
+    const dialogCancel  = document.getElementById("dialogCancel");
+    const dialogConfirm = document.getElementById("dialogConfirm");
+    const resetBtn      = document.getElementById("resetBtn");
+
+    resetBtn.addEventListener("click", () => {
+      dialog.classList.add("open");
+      dialogCancel.focus();
+    });
+
+    dialogCancel.addEventListener("click", closeDialog);
+
+    dialogConfirm.addEventListener("click", () => {
+      checkboxes.forEach((cb, idx) => {
+        cb.checked = false;
+        updateCardStyle(idx + 1, false);
+      });
+      store.remove(STORAGE_KEY);
+      updateProgress();
+      closeDialog();
+      showToast("Checklist reset.");
+    });
+
+    function closeDialog() {
+      dialog.classList.remove("open");
+      resetBtn.focus();
+    }
+
+    // close on overlay click
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) closeDialog();
+    });
+
+    // close on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && dialog.classList.contains("open")) closeDialog();
+    });
+
+    /* =====================================================
+       PLANNER PERSISTENCE
+    ===================================================== */
+    const PLANNER_KEY = "js_planner_v1";
+    const plannerChecks = [
+      { id: "planMon", key: "mon" },
+      { id: "planWed", key: "wed" },
+      { id: "planFri", key: "fri" }
+    ];
+
+    function loadPlanner() {
+      try {
+        const saved = store.get(PLANNER_KEY);
+        if (saved) {
+          const state = JSON.parse(saved);
+          plannerChecks.forEach(item => {
+            const cb = document.getElementById(item.id);
+            if (cb) {
+              cb.checked = !!state[item.key];
+              updatePlannerDay(item.id, !!state[item.key]);
+            }
+          });
+        }
+      } catch (e) {}
+    }
+
+    function savePlanner() {
+      const state = {};
+      plannerChecks.forEach(item => {
+        const cb = document.getElementById(item.id);
+        if (cb) state[item.key] = cb.checked;
+      });
+      try { store.set(PLANNER_KEY, JSON.stringify(state)); } catch (e) {}
+    }
+
+    function updatePlannerDay(cbId, done) {
+      const dayMap = { planMon: "planner-mon", planWed: "planner-wed", planFri: "planner-fri" };
+      const dayEl  = document.getElementById(dayMap[cbId]);
+      if (!dayEl) return;
+      if (done) dayEl.classList.add("done");
+      else       dayEl.classList.remove("done");
+    }
+
+    plannerChecks.forEach(item => {
+      const cb = document.getElementById(item.id);
+      if (!cb) return;
+      cb.addEventListener("change", () => {
+        updatePlannerDay(item.id, cb.checked);
+        savePlanner();
+      });
+    });
+
+    /* =====================================================
+       SHARE BUTTON
+    ===================================================== */
+    function handleShare() {
+      const shareData = {
+        title: "Jaweria Sohail — LinkedIn Profile & Demo Guide",
+        text:  "Interactive guide to optimise Jaweria Sohail's LinkedIn profile and showcase project demos. Prepared by MR. DIGITAL X.",
+        url:   window.location.href
+      };
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+      } else {
+        copyText(window.location.href);
+      }
+    }
+
+    document.getElementById("shareBtn").addEventListener("click", handleShare);
+    document.getElementById("shareBtn2").addEventListener("click", handleShare);
+
+    /* =====================================================
+       BOTTOM NAV ACTIVE STATE (intersection observer)
+    ===================================================== */
+    const sections    = ["checklist", "demos", "planner"];
+    const bnavLinks   = {
+      checklist: document.getElementById("bnav-checklist"),
+      demos:     document.getElementById("bnav-demos"),
+      planner:   document.getElementById("bnav-planner")
+    };
+    const topNavLinks = document.querySelectorAll("#top-nav nav a");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const id = entry.target.id;
+          if (bnavLinks[id]) {
+            if (entry.isIntersecting) {
+              bnavLinks[id].classList.add("active");
+            } else {
+              bnavLinks[id].classList.remove("active");
+            }
+          }
+          topNavLinks.forEach(a => {
+            if (a.getAttribute("href") === "#" + id) {
+              if (entry.isIntersecting) a.classList.add("active");
+              else a.classList.remove("active");
+            }
+          });
+        });
+      }, { rootMargin: "-30% 0px -60% 0px" });
+
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+    }
+
+    /* =====================================================
+       INIT
+    ===================================================== */
+    loadChecklist();
+    loadPlanner();
+  </script>
+
+</body>
+</html>
